@@ -5,35 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta CEP</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Consulta CEP</h1>
-    </header>
-    <form>
-        <div class="form-group">
-            <label for="cep">CEP</label>
-            <input type="text" class="form-control" maxlength="9" placeholder="00000-000" id="cep">
-            <input type="button" value="Consultar" id="form-btn">
-            <input type="button" value="Limpar" id="clear-btn">
+        <header>
+            <h1>Consulta CEP</h1>
+        </header>
+        <div id="container">
+            <form>
+                <div class="form-group" id="search">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" maxlength="9" placeholder="00000-000" id="cep">
+                    <input type="button" value="Consultar" id="form-btn">
+                    <input type="button" value="Limpar" id="clear-btn">
+                </div>
+                <div id="return">
+                    <div class="form-group">
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" class="form-control" placeholder="Rua/Avenida" id="logradouro">
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" class="form-control" placeholder="Bairro" id="bairro">
+                    </div>
+                    <div class="form-group">
+                        <label for="localidade">Localidade</label>
+                        <input type="text" class="form-control" placeholder="Cidade" id="localidade">
+                    </div>
+                    <div class="form-group">
+                        <label for="uf">UF</label>
+                        <input type="text" class="form-control" placeholder="UF" id="uf">
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="logradouro">Logradouro</label>
-            <input type="text" class="form-control" placeholder="Rua/Avenida" id="logradouro">
-        </div>
-        <div class="form-group">
-            <label for="bairro">Bairro</label>
-            <input type="text" class="form-control" placeholder="Bairro" id="bairro">
-        </div>
-        <div class="form-group">
-            <label for="localidade">Localidade</label>
-            <input type="text" class="form-control" placeholder="Cidade" id="localidade">
-        </div>
-        <div class="form-group">
-            <label for="uf">UF</label>
-            <input type="text" class="form-control" placeholder="UF" id="uf">
-        </div>
-    </form>
     <script src="src/js/script.js"></script>
 </body>
 </html>
