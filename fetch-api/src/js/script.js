@@ -1,5 +1,6 @@
 var cep = document.querySelector("#cep")
 var btn = document.querySelector("#form-btn")
+var clearBtn = document.querySelector("#clear-btn")
 
 btn.addEventListener("click", function event() {
     let search = cep.value.replace("-","")
@@ -28,3 +29,11 @@ function showData(result) {
         }
     }
 }
+
+clearBtn.addEventListener("click", function clear () {
+    document.querySelector("#cep").value = ""
+    document.querySelector("#logradouro").value = ""
+    document.querySelector("#bairro").value = ""
+    document.querySelector("#localidade").value = ""
+    document.querySelector("#uf").value = ""
+})
