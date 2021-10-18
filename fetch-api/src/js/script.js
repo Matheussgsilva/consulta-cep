@@ -1,6 +1,7 @@
 var cep = document.querySelector("#cep")
+var btn = document.querySelector("#form-btn")
 
-cep.addEventListener("blur", function event() {
+btn.addEventListener("click", function event() {
     let search = cep.value.replace("-","")
     const options = {
         method: 'GET',
