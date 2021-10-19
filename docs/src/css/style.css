@@ -103,6 +103,7 @@ header {
 
     #return {
         max-width: 400px;
+        margin: auto;
     }
 
     #return input {
