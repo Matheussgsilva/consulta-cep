@@ -4,9 +4,6 @@ var clearBtn = document.querySelector("#clear-btn")
 var alert = document.querySelector("#alert")
 
 btn.addEventListener("click", function event() {
-    if (cep.length < 8) {
-        alert.insertAdjacentHTML('afterbegin', "<p>O cep deve conter 8 dítgitos!</p>")
-    }
     let search = cep.value.replace("-","")
     const options = {
         method: 'GET',
@@ -22,11 +19,13 @@ btn.addEventListener("click", function event() {
         })
     })
     .catch(function error() {
+        alert.insertAdjacentHTML('afterbegin', "<p>CEP inválido!</p>")
         console.log(error.message)
     })
 })
 
 function showData(result) {
+    alert.innerHTML = ""
     for(resultData in result) {
         if(document.querySelector(`#${resultData}`)) {
             document.querySelector(`#${resultData}`).value = result[resultData]
@@ -40,4 +39,5 @@ clearBtn.addEventListener("click", function clear () {
     document.querySelector("#bairro").value = ""
     document.querySelector("#localidade").value = ""
     document.querySelector("#uf").value = ""
+    alert.innerHTML = ""
 })
