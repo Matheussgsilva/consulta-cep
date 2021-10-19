@@ -1,8 +1,12 @@
 var cep = document.querySelector("#cep")
 var btn = document.querySelector("#form-btn")
 var clearBtn = document.querySelector("#clear-btn")
+var alert = document.querySelector("#alert")
 
 btn.addEventListener("click", function event() {
+    if (cep.length < 8) {
+        alert.insertAdjacentHTML('afterbegin', "<p>O cep deve conter 8 dítgitos!</p>")
+    }
     let search = cep.value.replace("-","")
     const options = {
         method: 'GET',
