@@ -11,35 +11,35 @@
 </head>
 <body>
         <header>
+            <img src="src/image/lupa.png" alt="Imagem de uma lupa">
             <h1>Consulta CEP</h1>
         </header>
         <div id="container">
-            <form>
                 <div class="form-group" id="search">
-                    <label for="cep">CEP</label>
-                    <input type="text" class="form-control" maxlength="9" placeholder="00000-000" id="cep">
-                    <input type="button" value="Consultar" id="form-btn">
-                    <input type="button" value="Limpar" id="clear-btn">
+                    <span>Insira o CEP que deseja consultar</span>
+                    <label for="cep">CEP</label><br>
+                    <input type="text" class="form-control" maxlength="9" placeholder="00000-000" id="cep"><br>
+                    <input type="button" value="Consultar" id="form-btn" class="btn">
+                    <input type="button" value="Limpar" id="clear-btn" class="btn">
                 </div>
                 <div id="return">
                     <div class="form-group">
-                        <label for="logradouro">Logradouro</label>
+                        <label for="logradouro">Logradouro</label><br>
                         <input type="text" class="form-control" placeholder="Rua/Avenida" id="logradouro">
                     </div>
                     <div class="form-group">
-                        <label for="bairro">Bairro</label>
+                        <label for="bairro">Bairro</label><br>
                         <input type="text" class="form-control" placeholder="Bairro" id="bairro">
                     </div>
                     <div class="form-group">
-                        <label for="localidade">Localidade</label>
+                        <label for="localidade">Localidade</label><br>
                         <input type="text" class="form-control" placeholder="Cidade" id="localidade">
                     </div>
                     <div class="form-group">
-                        <label for="uf">UF</label>
+                        <label for="uf">UF</label><br>
                         <input type="text" class="form-control" placeholder="UF" id="uf">
                     </div>
                 </div>
-            </form>
         </div>
     <script src="src/js/script.js"></script>
 </body>
