@@ -15,4 +15,4 @@ Projeto criado para consultar endereço com base no CEP digitado pelo usuário.
 ## :clipboard: Aprendizados:
 Neste projeto treinei o uso de laço "for", uso de parâmetros em funções, eventos do DOM, tanto para receber os dados inseridos pelo usuário quanto para exibir na tela o resultado das funções e método fetch para consumir uma API externa retornando o endereço. Na parte visual utilizei media query para adicionar responsividade ao projeto.
 
-### :link: <a href="https://matheussgsilva.github.io/consulta-cep/">Clique aqui</a> para ver o projeto em produção.
+### :link: <a href="https://matheussgsilva.github.io/consulta-cep/" target="_blank">Clique aqui</a> para ver o projeto em produção.
