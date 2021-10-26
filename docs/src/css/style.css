@@ -88,6 +88,20 @@ header {
     border-radius: 5px;
 }
 
+#link-git img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+#link-git a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-third);
+    margin: 10px;
+}
+
 @media (max-width:600px) {
     #container {
         max-width: 500px;
